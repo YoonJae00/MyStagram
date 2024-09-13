@@ -1,0 +1,133 @@
+/* 전체 레이아웃 */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fafafa;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 935px;
+    margin: 0 auto;
+    display: flex;
+}
+
+/* 헤더 스타일 */
+header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #dbdbdb;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    max-width: 935px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.search-bar input {
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    padding: 5px 10px;
+    background-color: #fafafa;
+}
+
+.nav-icons a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #262626;
+}
+
+/* 메인 컨텐츠 */
+main {
+    margin-top: 60px;
+    padding: 20px;
+}
+
+.calendar {
+    width: 300px;
+    background-color: #ffffff;
+    border: 1px solid #dbdbdb;
+    padding: 20px;
+    margin-right: 20px;
+}
+
+.timeline {
+    flex-grow: 1;
+}
+
+.post {
+    background-color: #ffffff;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    margin-bottom: 60px;
+}
+
+.post header {
+    padding: 16px;
+    font-weight: bold;
+}
+
+.post-content img {
+    width: 100%;
+    height: auto;
+}
+
+.post-content p {
+    padding: 16px;
+}
+
+.post footer {
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tags span {
+    background-color: #efefef;
+    padding: 5px 10px;
+    border-radius: 3px;
+    margin-right: 5px;
+    font-size: 12px;
+}
+
+.view-more {
+    background-color: transparent;
+    border: none;
+    color: #0095f6;
+    cursor: pointer;
+}
+
+/* 푸터 스타일 */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #8e8e8e;
+    font-size: 12px;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 935px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .calendar {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
