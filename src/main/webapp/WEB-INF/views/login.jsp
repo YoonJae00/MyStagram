@@ -24,6 +24,6 @@
     <div class="signup-box">
         계정이 없으신가요? <a href="/signup">가입하기</a>
     </div>
-</div>
+</div>jsp
 </body>
 </html>
