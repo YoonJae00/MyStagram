@@ -9,7 +9,7 @@ public class MainController {
 
     @GetMapping("/")
     public String home(Model model) {
-        model.addAttribute("message", "Welcome to Mystagram");
+        model.addAttribute("message", "Welcome to Mstagram");
         return "index";
     }
 
